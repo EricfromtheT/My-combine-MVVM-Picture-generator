@@ -13,9 +13,11 @@
 		37B71DFE2992A7C600F0ABCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B71DFC2992A7C600F0ABCC /* Main.storyboard */; };
 		37B71E002992A7C700F0ABCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B71DFF2992A7C700F0ABCC /* Assets.xcassets */; };
 		37B71E032992A7C700F0ABCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B71E012992A7C700F0ABCC /* LaunchScreen.storyboard */; };
+		F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.release.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.release.xcconfig"; sourceTree = "<group>"; };
 		37B71DF32992A7C600F0ABCC /* My combine AI picture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My combine AI picture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B71DF62992A7C600F0ABCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		37B71DFF2992A7C700F0ABCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B71E022992A7C700F0ABCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B71E042992A7C700F0ABCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_combine_AI_picture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.debug.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C53B73315608F5BAAD8CB9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37B71DEA2992A7C600F0ABCC = {
 			isa = PBXGroup;
 			children = (
 				37B71DF52992A7C600F0ABCC /* My combine AI picture */,
 				37B71DF42992A7C600F0ABCC /* Products */,
+				7431E452F4D1F712EE384F7C /* Pods */,
+				2C53B73315608F5BAAD8CB9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "My combine AI picture";
 			sourceTree = "<group>";
 		};
+		7431E452F4D1F712EE384F7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */,
+				181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37B71E072992A7C700F0ABCC /* Build configuration list for PBXNativeTarget "My combine AI picture" */;
 			buildPhases = (
+				2872F49BED20594F5BB4AAA2 /* [CP] Check Pods Manifest.lock */,
 				37B71DEF2992A7C600F0ABCC /* Sources */,
 				37B71DF02992A7C600F0ABCC /* Frameworks */,
 				37B71DF12992A7C600F0ABCC /* Resources */,
+				E721DE1D96C75A61C273B640 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2872F49BED20594F5BB4AAA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My combine AI picture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E721DE1D96C75A61C273B640 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37B71DEF2992A7C600F0ABCC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		37B71E082992A7C700F0ABCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		37B71E092992A7C700F0ABCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
