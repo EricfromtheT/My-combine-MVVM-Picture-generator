@@ -19,7 +19,7 @@
 		37B71E1A2992B2A500F0ABCC /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E192992B2A500F0ABCC /* ImageResponse.swift */; };
 		37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */; };
 		37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */; };
-		37B71E202992B60700F0ABCC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1F2992B60700F0ABCC /* APIKey.swift */; };
+		37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E212992BFEC00F0ABCC /* APIKey.swift */; };
 		F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		37B71E192992B2A500F0ABCC /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Wrapper.swift"; sourceTree = "<group>"; };
-		37B71E1F2992B60700F0ABCC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		37B71E212992BFEC00F0ABCC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_combine_AI_picture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.debug.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +122,7 @@
 				37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */,
 				37B71E172992B28900F0ABCC /* ImageRequestBody.swift */,
 				37B71E192992B2A500F0ABCC /* ImageResponse.swift */,
-				37B71E1F2992B60700F0ABCC /* APIKey.swift */,
+				37B71E212992BFEC00F0ABCC /* APIKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 				37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */,
 				37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */,
 				37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */,
-				37B71E202992B60700F0ABCC /* APIKey.swift in Sources */,
+				37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */,
 				37B71E182992B28900F0ABCC /* ImageRequestBody.swift in Sources */,
 				37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */,
 				37B71E102992B19700F0ABCC /* PicViewController.swift in Sources */,
