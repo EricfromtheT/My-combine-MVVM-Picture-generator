@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DF62992A7C600F0ABCC /* AppDelegate.swift */; };
 		37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */; };
-		37B71DFB2992A7C600F0ABCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DFA2992A7C600F0ABCC /* ViewController.swift */; };
-		37B71DFE2992A7C600F0ABCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B71DFC2992A7C600F0ABCC /* Main.storyboard */; };
 		37B71E002992A7C700F0ABCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B71DFF2992A7C700F0ABCC /* Assets.xcassets */; };
 		37B71E032992A7C700F0ABCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B71E012992A7C700F0ABCC /* LaunchScreen.storyboard */; };
+		37B71E102992B19700F0ABCC /* PicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E0F2992B19700F0ABCC /* PicViewController.swift */; };
+		37B71E122992B1DC00F0ABCC /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E112992B1DC00F0ABCC /* PictureView.swift */; };
+		37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E132992B20D00F0ABCC /* PicViewModel.swift */; };
+		37B71E162992B26B00F0ABCC /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */; };
+		37B71E182992B28900F0ABCC /* ImageRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E172992B28900F0ABCC /* ImageRequestBody.swift */; };
+		37B71E1A2992B2A500F0ABCC /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E192992B2A500F0ABCC /* ImageResponse.swift */; };
+		37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */; };
+		37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */; };
+		37B71E202992B60700F0ABCC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1F2992B60700F0ABCC /* APIKey.swift */; };
 		F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +28,18 @@
 		37B71DF32992A7C600F0ABCC /* My combine AI picture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My combine AI picture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B71DF62992A7C600F0ABCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37B71DFA2992A7C600F0ABCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B71DFD2992A7C600F0ABCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B71DFF2992A7C700F0ABCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B71E022992A7C700F0ABCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B71E042992A7C700F0ABCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B71E0F2992B19700F0ABCC /* PicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewController.swift; sourceTree = "<group>"; };
+		37B71E112992B1DC00F0ABCC /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		37B71E132992B20D00F0ABCC /* PicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewModel.swift; sourceTree = "<group>"; };
+		37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
+		37B71E172992B28900F0ABCC /* ImageRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequestBody.swift; sourceTree = "<group>"; };
+		37B71E192992B2A500F0ABCC /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Wrapper.swift"; sourceTree = "<group>"; };
+		37B71E1F2992B60700F0ABCC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_combine_AI_picture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.debug.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,15 +85,62 @@
 		37B71DF52992A7C600F0ABCC /* My combine AI picture */ = {
 			isa = PBXGroup;
 			children = (
+				37B71E0E2992B17700F0ABCC /* Wrapper */,
+				37B71E0D2992B17000F0ABCC /* Extension */,
+				37B71E0C2992B16B00F0ABCC /* Model */,
+				37B71E0B2992B16500F0ABCC /* ViewModel */,
+				37B71E0A2992B16100F0ABCC /* View */,
 				37B71DF62992A7C600F0ABCC /* AppDelegate.swift */,
 				37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */,
-				37B71DFA2992A7C600F0ABCC /* ViewController.swift */,
-				37B71DFC2992A7C600F0ABCC /* Main.storyboard */,
 				37B71DFF2992A7C700F0ABCC /* Assets.xcassets */,
 				37B71E012992A7C700F0ABCC /* LaunchScreen.storyboard */,
 				37B71E042992A7C700F0ABCC /* Info.plist */,
 			);
 			path = "My combine AI picture";
+			sourceTree = "<group>";
+		};
+		37B71E0A2992B16100F0ABCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37B71E0F2992B19700F0ABCC /* PicViewController.swift */,
+				37B71E112992B1DC00F0ABCC /* PictureView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37B71E0B2992B16500F0ABCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37B71E132992B20D00F0ABCC /* PicViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		37B71E0C2992B16B00F0ABCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */,
+				37B71E172992B28900F0ABCC /* ImageRequestBody.swift */,
+				37B71E192992B2A500F0ABCC /* ImageResponse.swift */,
+				37B71E1F2992B60700F0ABCC /* APIKey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37B71E0D2992B17000F0ABCC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		37B71E0E2992B17700F0ABCC /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */,
+			);
+			path = Wrapper;
 			sourceTree = "<group>";
 		};
 		7431E452F4D1F712EE384F7C /* Pods */ = {
@@ -88,7 +149,6 @@
 				A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */,
 				181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +214,6 @@
 			files = (
 				37B71E032992A7C700F0ABCC /* LaunchScreen.storyboard in Resources */,
 				37B71E002992A7C700F0ABCC /* Assets.xcassets in Resources */,
-				37B71DFE2992A7C600F0ABCC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +266,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B71DFB2992A7C600F0ABCC /* ViewController.swift in Sources */,
+				37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */,
+				37B71E1A2992B2A500F0ABCC /* ImageResponse.swift in Sources */,
+				37B71E162992B26B00F0ABCC /* ChatGPTAPI.swift in Sources */,
+				37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */,
 				37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */,
 				37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */,
+				37B71E202992B60700F0ABCC /* APIKey.swift in Sources */,
+				37B71E182992B28900F0ABCC /* ImageRequestBody.swift in Sources */,
+				37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */,
+				37B71E102992B19700F0ABCC /* PicViewController.swift in Sources */,
+				37B71E122992B1DC00F0ABCC /* PictureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37B71DFC2992A7C600F0ABCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37B71DFD2992A7C600F0ABCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		37B71E012992A7C700F0ABCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
