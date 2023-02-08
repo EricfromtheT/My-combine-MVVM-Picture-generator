@@ -15,7 +15,7 @@ class PictureView: UIView {
     var imageViews = [UIImageView(), UIImageView(), UIImageView()]
     var isValid: Bool = false {
         didSet {
-            if isValid { turnButtonToEnabled() } else { turnOff() }
+            switchButtonStatus(canBeOpend: isValid)
         }
     }
     
@@ -78,13 +78,13 @@ class PictureView: UIView {
         sendButton.isEnabled = false
     }
     
-    func turnButtonToEnabled() {
-        sendButton.backgroundColor = .systemPink
-        sendButton.isEnabled = true
-    }
-    
-    func turnOff() {
-        sendButton.backgroundColor = .label
-        sendButton.isEnabled = false
+    func switchButtonStatus(canBeOpend: Bool) {
+        if canBeOpend {
+            sendButton.backgroundColor = .systemPink
+            sendButton.isEnabled = true
+        } else {
+            sendButton.backgroundColor = .label
+            sendButton.isEnabled = false
+        }
     }
 }

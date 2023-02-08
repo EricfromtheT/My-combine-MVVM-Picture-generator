@@ -9,12 +9,12 @@ import Foundation
 import Combine
 
 final class PicViewModel {
-    @Published var prompt: String = "" {
-        didSet {
-            if prompt.isEmpty { isValid = false } else { isValid = true }
-        }
+    
+    @Published var prompt: String = ""
+    var isValid: AnyPublisher<Bool, Never> {
+        $prompt.map { !$0.isEmpty }.eraseToAnyPublisher()
     }
-    @Published var isValid = false
+    
     let urlResult = PassthroughSubject<[String], Never>()
     
     func callAPI() {
