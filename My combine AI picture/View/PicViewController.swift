@@ -10,9 +10,9 @@ import Combine
 
 class PicViewController: UIViewController {
     
-    private var contentView = PictureView()
-        private let picViewModel = PicViewModel()
-        private var bindings = [AnyCancellable]()
+    private let contentView = PictureView()
+    private let picViewModel = PicViewModel()
+    private var bindings = [AnyCancellable]()
         
     override func loadView() {
         self.view = contentView
