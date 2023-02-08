@@ -11,7 +11,7 @@ import Combine
 final class PicViewModel {
     @Published var prompt: String = "" {
         didSet {
-            if prompt.isEmpty { isValid = false }else { isValid = true }
+            if prompt.isEmpty { isValid = false } else { isValid = true }
         }
     }
     @Published var isValid = false
