@@ -10,7 +10,6 @@ import Combine
 
 class PicViewController: UIViewController {
     
-    private var contentView = PictureView()
     private let contentView = PictureView()
     private let picViewModel = PicViewModel()
     private var bindings = [AnyCancellable]()
