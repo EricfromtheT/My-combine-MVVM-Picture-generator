@@ -47,9 +47,9 @@ class PicViewController: UIViewController {
         
             picViewModel.urlResult
                 .receive(on: DispatchQueue.main)
-                .sink {
+                .sink { [weak self] urls in
                     for index in 0...2 {
-                        self.contentView.imageViews[index].loadImage($0[index])
+                        self?.contentView.imageViews[index].loadImage(urls[index])
                     }
                 }
                 .store(in: &bindings)
