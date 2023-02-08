@@ -8,7 +8,7 @@
 import Foundation
 
 struct ImageRequestBody: Codable {
-    var prompt: String
-    var size: String = "512x512"
-    var n: Int = 3
+    let prompt: String
+    let size: String = "512x512"
+    let n: Int = 3
 }
