@@ -14,17 +14,11 @@ final class PicViewModel {
     var isValid: AnyPublisher<Bool, Never> {
         $prompt.map { !$0.isEmpty }.eraseToAnyPublisher()
     }
-    
     let urlResult = PassthroughSubject<[String], Never>()
     
     func callAPI() {
-        ChatGPTAPI.shared.fetchImageData(description: prompt) { [weak self] completion in
-            switch completion {
-            case .success(let urls):
-                self?.urlResult.send(urls)
-            case .failure(let error):
-                print(error)
-            }
+        ChatGPTAPI.shared.test(description: prompt) { [weak self] urls in
+            self?.urlResult.send(urls)
         }
     }
 }
