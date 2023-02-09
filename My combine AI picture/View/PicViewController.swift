@@ -41,7 +41,7 @@ class PicViewController: UIViewController {
         
         // VC 監聽 ViewModel 的行為
         func bindViewModelToView() {
-            picViewModel.$isValid
+            picViewModel.isValid
                 .assign(to: \.isValid, on: contentView)
                 .store(in: &bindings)
         
