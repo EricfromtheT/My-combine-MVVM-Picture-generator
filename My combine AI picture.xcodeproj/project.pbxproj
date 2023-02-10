@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3740D87E2996AD09001AB6A9 /* UITableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */; };
+		378ADD7E29965DE00066A8C5 /* BossNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378ADD7D29965DE00066A8C5 /* BossNavViewController.swift */; };
 		37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DF62992A7C600F0ABCC /* AppDelegate.swift */; };
 		37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */; };
 		37B71E002992A7C700F0ABCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B71DFF2992A7C700F0ABCC /* Assets.xcassets */; };
@@ -20,11 +22,15 @@
 		37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */; };
 		37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */; };
 		37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E212992BFEC00F0ABCC /* APIKey.swift */; };
+		37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */; };
+		37B71E26299622D900F0ABCC /* ChatRoomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */; };
 		F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.release.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.release.xcconfig"; sourceTree = "<group>"; };
+		3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ex.swift"; sourceTree = "<group>"; };
+		378ADD7D29965DE00066A8C5 /* BossNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossNavViewController.swift; sourceTree = "<group>"; };
 		37B71DF32992A7C600F0ABCC /* My combine AI picture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My combine AI picture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B71DF62992A7C600F0ABCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Wrapper.swift"; sourceTree = "<group>"; };
 		37B71E212992BFEC00F0ABCC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableView.swift; sourceTree = "<group>"; };
 		9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_combine_AI_picture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.debug.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +112,8 @@
 			children = (
 				37B71E0F2992B19700F0ABCC /* PicViewController.swift */,
 				37B71E112992B1DC00F0ABCC /* PictureView.swift */,
+				37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */,
+				378ADD7D29965DE00066A8C5 /* BossNavViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */,
+				37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */,
+				3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -268,8 +280,11 @@
 			files = (
 				37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */,
 				37B71E1A2992B2A500F0ABCC /* ImageResponse.swift in Sources */,
+				37B71E26299622D900F0ABCC /* ChatRoomTableView.swift in Sources */,
 				37B71E162992B26B00F0ABCC /* ChatGPTAPI.swift in Sources */,
+				3740D87E2996AD09001AB6A9 /* UITableViewCell+Ex.swift in Sources */,
 				37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */,
+				378ADD7E29965DE00066A8C5 /* BossNavViewController.swift in Sources */,
 				37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */,
 				37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */,
 				37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */,
@@ -277,6 +292,7 @@
 				37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */,
 				37B71E102992B19700F0ABCC /* PicViewController.swift in Sources */,
 				37B71E122992B1DC00F0ABCC /* PictureView.swift in Sources */,
+				37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

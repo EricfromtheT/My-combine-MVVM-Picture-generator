@@ -34,7 +34,7 @@ class PicViewController: UIViewController {
         // ViewModel 監聽 VC 的行為
         func bindViewToViewModel() {
             // 將使用者輸入的文字傳到 viewModel 的 login property 裏面
-            contentView.promptTextField.textPublisher
+            contentView.promptTextView.textViewPublisher
                 .receive(on: DispatchQueue.main)
                 .assign(to: \.prompt, on: picViewModel)
                 .store(in: &bindings)
@@ -64,13 +64,13 @@ class PicViewController: UIViewController {
         picViewModel.callAPI()
     }
     
-    func dismissKeyboardByTouch() {
+    private func dismissKeyboardByTouch() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(touch))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     
-    @objc func touch() {
+    @objc private func touch() {
         view.endEditing(true)
     }
 }
