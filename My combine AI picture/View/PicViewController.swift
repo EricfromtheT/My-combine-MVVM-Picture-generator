@@ -21,6 +21,7 @@ class PicViewController: UIViewController {
     override func viewDidLoad() {
         setUpBindings()
         setUpTarget()
+        dismissKeyboardByTouch()
     }
     
     private func setUpTarget() {
@@ -61,5 +62,15 @@ class PicViewController: UIViewController {
     
     @objc private func sendRequest() {
         picViewModel.callAPI()
+    }
+    
+    func dismissKeyboardByTouch() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(touch))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func touch() {
+        view.endEditing(true)
     }
 }
