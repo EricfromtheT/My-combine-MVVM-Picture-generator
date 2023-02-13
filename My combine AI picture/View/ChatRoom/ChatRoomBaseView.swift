@@ -7,12 +7,10 @@
 
 import UIKit
 
-final class PictureView: UIView {
+final class ChatRoomBaseView: UIView {
     let promptTextView = UITextView()
     let senderBackView = UIView()
     let sendButton = UIButton()
-    let stackView = UIStackView()
-    let imageViews = [UIImageView(), UIImageView(), UIImageView()]
     let chatTableView = ChatRoomTableView()
     var isValid: Bool = false {
         didSet {
@@ -32,15 +30,6 @@ final class PictureView: UIView {
     }
     
     func addSubViews() {
-        stackView.spacing = 20
-        stackView.axis = .vertical
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        imageViews.forEach {
-            stackView.addArrangedSubview($0)
-            $0.translatesAutoresizingMaskIntoConstraints = false
-        }
-        chatTableView.addSubview(stackView)
-        
         addSubview(senderBackView)
         senderBackView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -68,15 +57,8 @@ final class PictureView: UIView {
             sendButton.centerYAnchor.constraint(equalTo: promptTextView.centerYAnchor),
             chatTableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             chatTableView.bottomAnchor.constraint(equalTo: senderBackView.topAnchor),
-            chatTableView.widthAnchor.constraint(equalTo: self.widthAnchor),
-            stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20)
+            chatTableView.widthAnchor.constraint(equalTo: self.widthAnchor)
         ])
-        
-        imageViews.forEach {
-            $0.heightAnchor.constraint(equalToConstant: 150).isActive = true
-            $0.widthAnchor.constraint(equalToConstant: 150).isActive = true
-            $0.centerXAnchor.constraint(equalTo: stackView.centerXAnchor).isActive = true
-        }
     }
     
     func setUpLook() {
@@ -85,13 +67,9 @@ final class PictureView: UIView {
         promptTextView.layer.cornerRadius = 18
         promptTextView.font = UIFont.systemFont(ofSize: 21)
         senderBackView.backgroundColor = .black
-        imageViews.forEach {
-            $0.backgroundColor = .systemBackground
-        }
         sendButton.backgroundColor = .label
         sendButton.setTitle("Send", for: .normal)
         sendButton.isEnabled = false
-        chatTableView.backgroundColor = .systemGray5
     }
     
     func switchButtonStatus(canBeOpend: Bool) {
@@ -102,5 +80,9 @@ final class PictureView: UIView {
             sendButton.backgroundColor = .label
             sendButton.isEnabled = false
         }
+    }
+    
+    func renewView(numOfRow: Int) {
+        chatTableView.scrollToRow(at: IndexPath(row: numOfRow-1, section: 0), at: .bottom, animated: true)
     }
 }
