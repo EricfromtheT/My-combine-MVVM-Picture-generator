@@ -17,6 +17,7 @@ final class ImageMessageCell: UITableViewCell, ChatCell {
         addSubViews()
         setUpConstraints()
         setUpAppearance()
+        setTarget()
         selectionStyle = .none
     }
     
@@ -46,5 +47,28 @@ final class ImageMessageCell: UITableViewCell, ChatCell {
     private func setUpAppearance() {
         picView.layer.cornerRadius = 10
         backgroundColor = .systemGray5
+    }
+    
+    private func setTarget() {
+        picView.isUserInteractionEnabled = true
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(showComfirmation))
+        picView.addGestureRecognizer(gesture)
+    }
+    
+    @objc private func showComfirmation() {
+        let alert = UIAlertController(title: "下載", message: "是否確定下載", preferredStyle: .alert)
+        let reject = UIAlertAction(title: "No", style: .cancel)
+        let comfirm = UIAlertAction(title: "Yes", style: .default) {
+            action in
+            self.downloadImage()
+        }
+        alert.addAction(reject)
+        alert.addAction(comfirm)
+        viewContainingController()?.present(alert, animated: true)
+    }
+    
+    private func downloadImage() {
+        guard let image = picView.image else { return }
+        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
     }
 }
