@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373F349A2999E39900695CC9 /* KeyBoardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F34992999E39900695CC9 /* KeyBoardHandling.swift */; };
 		3740D87E2996AD09001AB6A9 /* UITableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */; };
 		3740D8812996AD9E001AB6A9 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D8802996AD9E001AB6A9 /* TextMessageCell.swift */; };
 		3740D8832996ADA8001AB6A9 /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D8822996ADA8001AB6A9 /* ImageMessageCell.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.release.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.release.xcconfig"; sourceTree = "<group>"; };
+		373F34992999E39900695CC9 /* KeyBoardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardHandling.swift; sourceTree = "<group>"; };
 		3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ex.swift"; sourceTree = "<group>"; };
 		3740D8802996AD9E001AB6A9 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
 		3740D8822996ADA8001AB6A9 /* ImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		373F34982999E25400695CC9 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				373F34992999E39900695CC9 /* KeyBoardHandling.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */,
 				37B71E102992B19700F0ABCC /* ChatRoomViewController.swift in Sources */,
 				37B71E122992B1DC00F0ABCC /* ChatRoomBaseView.swift in Sources */,
+				373F349A2999E39900695CC9 /* KeyBoardHandling.swift in Sources */,
 				37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

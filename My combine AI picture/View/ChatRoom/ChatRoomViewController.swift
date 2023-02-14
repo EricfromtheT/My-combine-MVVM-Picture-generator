@@ -13,7 +13,7 @@ class ChatRoomViewController: UIViewController {
     private let contentView = ChatRoomBaseView()
     private let picViewModel = PicViewModel()
     private var bindings = [AnyCancellable]()
-    private let uuidGenerator = UUID()
+    private var viewConstraints = NSLayoutConstraint()
     
     typealias DataSource = UITableViewDiffableDataSource<Int, ContentInfo>
     typealias SnapShot = NSDiffableDataSourceSnapshot<Int, ContentInfo>
@@ -28,7 +28,7 @@ class ChatRoomViewController: UIViewController {
 
     // MARK: Life Cycle
     override func loadView() {
-        self.view = contentView
+        view = contentView
     }
     
     override func viewDidLoad() {
@@ -64,7 +64,9 @@ class ChatRoomViewController: UIViewController {
     }
     
     private func setUpBindings() {
-        // ViewModel 監聽 VC 的行為
+        keyboardFrameSubscription
+            .store(in: &bindings)
+        
         func bindViewToViewModel() {
             // 將使用者輸入的文字傳到 viewModel 的 login property 裏面
             contentView.promptTextView.textViewPublisher
@@ -120,10 +122,21 @@ class ChatRoomViewController: UIViewController {
     private func dismissKeyboardByTouch() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(touch))
         tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
+        contentView.chatTableView.addGestureRecognizer(tap)
     }
     
     @objc private func touch() {
         view.endEditing(true)
+    }
+}
+
+extension ChatRoomViewController: KeyboardHandling {
+    func keyboardWillChangeFrame(yOffset: CGFloat, duration: TimeInterval, animationCurve: UIView.AnimationOptions) {
+        contentView.renewButtonPosition(yOffset: yOffset)
+        UIView.animate(withDuration: duration, delay: 0, animations: {
+            [weak self] in
+            guard let self = self else { return }
+            self.contentView.layoutIfNeeded()
+        })
     }
 }

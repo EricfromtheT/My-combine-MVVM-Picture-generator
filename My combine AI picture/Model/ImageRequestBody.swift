@@ -10,5 +10,5 @@ import Foundation
 struct ImageRequestBody: Encodable {
     let prompt: String
     let size: String = "512x512"
-    let n: Int = 3
+    let n: Int = 4
 }

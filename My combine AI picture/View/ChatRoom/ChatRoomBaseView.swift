@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import Combine
 
 final class ChatRoomBaseView: UIView {
     let promptTextView = UITextView()
     let senderBackView = UIView()
     let sendButton = UIButton()
     let chatTableView = ChatRoomTableView()
+    let senderStack = UIStackView()
+    private var sendSectionButtomConstraint: NSLayoutConstraint = NSLayoutConstraint()
+    private var tableViewButtomConstraint: NSLayoutConstraint = NSLayoutConstraint()
+    
     var isValid: Bool = false {
         didSet {
             switchButtonStatus(canBeOpend: isValid)
@@ -36,35 +41,40 @@ final class ChatRoomBaseView: UIView {
         addSubview(chatTableView)
         chatTableView.translatesAutoresizingMaskIntoConstraints = false
         
-        senderBackView.addSubview(promptTextView)
+        senderBackView.addSubview(senderStack)
+        senderStack.translatesAutoresizingMaskIntoConstraints = false
+        
+        senderStack.addArrangedSubview(promptTextView)
         promptTextView.translatesAutoresizingMaskIntoConstraints = false
 
-        senderBackView.addSubview(sendButton)
+        senderStack.addArrangedSubview(sendButton)
         sendButton.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func setConstraints() {
-        guard let textViewSuper = promptTextView.superview else { return print("wrong with finding promptTextView super view") }
+        sendSectionButtomConstraint = senderBackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
+        tableViewButtomConstraint = chatTableView.bottomAnchor.constraint(equalTo: senderBackView.topAnchor)
+        
         NSLayoutConstraint.activate([
-            senderBackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            senderBackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
+            sendSectionButtomConstraint,
+            senderBackView.heightAnchor.constraint(equalToConstant: 60),
             senderBackView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor),
-            promptTextView.topAnchor.constraint(equalTo: textViewSuper.topAnchor, constant: 10),
-            promptTextView.leadingAnchor.constraint(equalTo: textViewSuper.leadingAnchor, constant: 20),
-            promptTextView.widthAnchor.constraint(equalTo: textViewSuper.widthAnchor, multiplier: 0.78),
-            promptTextView.heightAnchor.constraint(equalToConstant: 40),
-            sendButton.leadingAnchor.constraint(equalTo: promptTextView.trailingAnchor, constant: 10),
-            sendButton.centerYAnchor.constraint(equalTo: promptTextView.centerYAnchor),
+            
+            senderStack.centerXAnchor.constraint(equalTo: senderBackView.centerXAnchor),
+            senderStack.centerYAnchor.constraint(equalTo: senderBackView.centerYAnchor),
+            promptTextView.widthAnchor.constraint(equalTo: senderBackView.widthAnchor, multiplier: 0.7),
+            
             chatTableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            chatTableView.bottomAnchor.constraint(equalTo: senderBackView.topAnchor),
+            tableViewButtomConstraint,
             chatTableView.widthAnchor.constraint(equalTo: self.widthAnchor)
         ])
     }
     
     func setUpLook() {
         backgroundColor = .gray
+        senderStack.spacing = 15
+        senderStack.axis = .horizontal
         promptTextView.backgroundColor = .systemBackground
-        promptTextView.layer.cornerRadius = 18
         promptTextView.font = UIFont.systemFont(ofSize: 21)
         senderBackView.backgroundColor = .black
         sendButton.backgroundColor = .label
@@ -83,6 +93,14 @@ final class ChatRoomBaseView: UIView {
     }
     
     func renewView(numOfRow: Int) {
-        chatTableView.scrollToRow(at: IndexPath(row: numOfRow-1, section: 0), at: .bottom, animated: true)
+        if numOfRow > 0 {
+            chatTableView.scrollToRow(at: IndexPath(row: numOfRow-1, section: 0), at: .top, animated: true)
+        }
+    }
+    
+    func renewButtonPosition(yOffset: CGFloat) {
+        sendSectionButtomConstraint.isActive = false
+        sendSectionButtomConstraint = senderBackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: yOffset)
+        sendSectionButtomConstraint.isActive = true
     }
 }
