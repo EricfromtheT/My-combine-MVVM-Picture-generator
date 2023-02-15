@@ -64,7 +64,7 @@ final class ImageMessageCell: UITableViewCell, ChatCell {
         }
         alert.addAction(reject)
         alert.addAction(comfirm)
-        viewContainingController()?.present(alert, animated: true)
+        parentViewController?.present(alert, animated: true)
     }
     
     private func downloadImage() {

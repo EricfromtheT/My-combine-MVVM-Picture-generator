@@ -15,7 +15,7 @@ class BossNavViewController: UINavigationController {
     
     private func setUpAppearance() {
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor.blue
+        appearance.backgroundColor = UIColor.brown
         appearance.shadowColor = nil
         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.cyan as Any]
         self.navigationBar.standardAppearance = appearance

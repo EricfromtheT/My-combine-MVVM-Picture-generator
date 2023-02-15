@@ -28,6 +28,7 @@
 		37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E212992BFEC00F0ABCC /* APIKey.swift */; };
 		37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */; };
 		37B71E26299622D900F0ABCC /* ChatRoomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */; };
+		37BC71FA299D0CB100C71F0B /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC71F9299D0CB100C71F0B /* UIView+Ex.swift */; };
 		F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		37B71E212992BFEC00F0ABCC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableView.swift; sourceTree = "<group>"; };
+		37BC71F9299D0CB100C71F0B /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_combine_AI_picture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.debug.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +181,7 @@
 				37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */,
 				37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */,
 				3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */,
+				37BC71F9299D0CB100C71F0B /* UIView+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				37B71E122992B1DC00F0ABCC /* ChatRoomBaseView.swift in Sources */,
 				373F349A2999E39900695CC9 /* KeyBoardHandling.swift in Sources */,
 				37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */,
+				37BC71FA299D0CB100C71F0B /* UIView+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
