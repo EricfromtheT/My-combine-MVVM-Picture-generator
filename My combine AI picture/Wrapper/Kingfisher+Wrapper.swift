@@ -9,7 +9,7 @@ import Foundation
 import Kingfisher
 
 extension UIImageView {
-    func loadImage(_ urlString: String?, placeHolder: UIImage? = nil) {
+    func loadImage(_ urlString: String?, placeHolder: UIImage? = UIImage(named: "image")) {
         guard urlString != nil else { return }
         let url = URL(string: urlString!)
         self.kf.indicatorType = .activity

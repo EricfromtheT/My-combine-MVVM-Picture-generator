@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageResponse: Codable {
+struct ImageResponse: Decodable {
     let created: Int
     let data: [ImageURL]
 }

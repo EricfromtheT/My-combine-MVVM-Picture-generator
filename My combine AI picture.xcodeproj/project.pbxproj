@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373F349A2999E39900695CC9 /* KeyBoardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373F34992999E39900695CC9 /* KeyBoardHandling.swift */; };
+		3740D87E2996AD09001AB6A9 /* UITableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */; };
+		3740D8812996AD9E001AB6A9 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D8802996AD9E001AB6A9 /* TextMessageCell.swift */; };
+		3740D8832996ADA8001AB6A9 /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740D8822996ADA8001AB6A9 /* ImageMessageCell.swift */; };
+		37650A9529973D0B0090D7AA /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37650A9429973D0B0090D7AA /* ChatRoom.swift */; };
+		378ADD7E29965DE00066A8C5 /* BossNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378ADD7D29965DE00066A8C5 /* BossNavViewController.swift */; };
 		37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DF62992A7C600F0ABCC /* AppDelegate.swift */; };
 		37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */; };
 		37B71E002992A7C700F0ABCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B71DFF2992A7C700F0ABCC /* Assets.xcassets */; };
 		37B71E032992A7C700F0ABCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B71E012992A7C700F0ABCC /* LaunchScreen.storyboard */; };
-		37B71E102992B19700F0ABCC /* PicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E0F2992B19700F0ABCC /* PicViewController.swift */; };
-		37B71E122992B1DC00F0ABCC /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E112992B1DC00F0ABCC /* PictureView.swift */; };
+		37B71E102992B19700F0ABCC /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E0F2992B19700F0ABCC /* ChatRoomViewController.swift */; };
+		37B71E122992B1DC00F0ABCC /* ChatRoomBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E112992B1DC00F0ABCC /* ChatRoomBaseView.swift */; };
 		37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E132992B20D00F0ABCC /* PicViewModel.swift */; };
 		37B71E162992B26B00F0ABCC /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */; };
 		37B71E182992B28900F0ABCC /* ImageRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E172992B28900F0ABCC /* ImageRequestBody.swift */; };
@@ -20,19 +26,27 @@
 		37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */; };
 		37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */; };
 		37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E212992BFEC00F0ABCC /* APIKey.swift */; };
+		37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */; };
+		37B71E26299622D900F0ABCC /* ChatRoomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */; };
 		F74DD7E825128E255EFCC56C /* Pods_My_combine_AI_picture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		181DB39AA347B2D6DF9C1208 /* Pods-My combine AI picture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.release.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.release.xcconfig"; sourceTree = "<group>"; };
+		373F34992999E39900695CC9 /* KeyBoardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardHandling.swift; sourceTree = "<group>"; };
+		3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ex.swift"; sourceTree = "<group>"; };
+		3740D8802996AD9E001AB6A9 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
+		3740D8822996ADA8001AB6A9 /* ImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
+		37650A9429973D0B0090D7AA /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		378ADD7D29965DE00066A8C5 /* BossNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossNavViewController.swift; sourceTree = "<group>"; };
 		37B71DF32992A7C600F0ABCC /* My combine AI picture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My combine AI picture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B71DF62992A7C600F0ABCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B71DF82992A7C600F0ABCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37B71DFF2992A7C700F0ABCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B71E022992A7C700F0ABCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B71E042992A7C700F0ABCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37B71E0F2992B19700F0ABCC /* PicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewController.swift; sourceTree = "<group>"; };
-		37B71E112992B1DC00F0ABCC /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		37B71E0F2992B19700F0ABCC /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		37B71E112992B1DC00F0ABCC /* ChatRoomBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomBaseView.swift; sourceTree = "<group>"; };
 		37B71E132992B20D00F0ABCC /* PicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewModel.swift; sourceTree = "<group>"; };
 		37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
 		37B71E172992B28900F0ABCC /* ImageRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequestBody.swift; sourceTree = "<group>"; };
@@ -40,6 +54,8 @@
 		37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		37B71E1D2992B2F300F0ABCC /* Kingfisher+Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Wrapper.swift"; sourceTree = "<group>"; };
 		37B71E212992BFEC00F0ABCC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableView.swift; sourceTree = "<group>"; };
 		9201C2864FB0F7EE79B14D81 /* Pods_My_combine_AI_picture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_combine_AI_picture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CA079B77BD68901A53E555 /* Pods-My combine AI picture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My combine AI picture.debug.xcconfig"; path = "Target Support Files/Pods-My combine AI picture/Pods-My combine AI picture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +80,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		373F34982999E25400695CC9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				373F34992999E39900695CC9 /* KeyBoardHandling.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3740D87F2996AD83001AB6A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3740D8802996AD9E001AB6A9 /* TextMessageCell.swift */,
+				3740D8822996ADA8001AB6A9 /* ImageMessageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3740D8842997318D001AB6A9 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				37B71E112992B1DC00F0ABCC /* ChatRoomBaseView.swift */,
+				37B71E25299622D900F0ABCC /* ChatRoomTableView.swift */,
+				37B71E0F2992B19700F0ABCC /* ChatRoomViewController.swift */,
+				3740D87F2996AD83001AB6A9 /* Cell */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
 		37B71DEA2992A7C600F0ABCC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,7 @@
 		37B71DF52992A7C600F0ABCC /* My combine AI picture */ = {
 			isa = PBXGroup;
 			children = (
+				373F34982999E25400695CC9 /* Protocol */,
 				37B71E0E2992B17700F0ABCC /* Wrapper */,
 				37B71E0D2992B17000F0ABCC /* Extension */,
 				37B71E0C2992B16B00F0ABCC /* Model */,
@@ -102,8 +147,8 @@
 		37B71E0A2992B16100F0ABCC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				37B71E0F2992B19700F0ABCC /* PicViewController.swift */,
-				37B71E112992B1DC00F0ABCC /* PictureView.swift */,
+				378ADD7D29965DE00066A8C5 /* BossNavViewController.swift */,
+				3740D8842997318D001AB6A9 /* ChatRoom */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				37B71E152992B26B00F0ABCC /* ChatGPTAPI.swift */,
+				37650A9429973D0B0090D7AA /* ChatRoom.swift */,
 				37B71E172992B28900F0ABCC /* ImageRequestBody.swift */,
 				37B71E192992B2A500F0ABCC /* ImageResponse.swift */,
 				37B71E212992BFEC00F0ABCC /* APIKey.swift */,
@@ -131,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				37B71E1B2992B2C800F0ABCC /* UITextField+Extension.swift */,
+				37B71E232995FF6B00F0ABCC /* UITextView+Extension.swift */,
+				3740D87D2996AD09001AB6A9 /* UITableViewCell+Ex.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -266,17 +314,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37650A9529973D0B0090D7AA /* ChatRoom.swift in Sources */,
 				37B71E1C2992B2C800F0ABCC /* UITextField+Extension.swift in Sources */,
 				37B71E1A2992B2A500F0ABCC /* ImageResponse.swift in Sources */,
+				37B71E26299622D900F0ABCC /* ChatRoomTableView.swift in Sources */,
 				37B71E162992B26B00F0ABCC /* ChatGPTAPI.swift in Sources */,
+				3740D87E2996AD09001AB6A9 /* UITableViewCell+Ex.swift in Sources */,
 				37B71E1E2992B2F300F0ABCC /* Kingfisher+Wrapper.swift in Sources */,
+				378ADD7E29965DE00066A8C5 /* BossNavViewController.swift in Sources */,
 				37B71DF72992A7C600F0ABCC /* AppDelegate.swift in Sources */,
 				37B71DF92992A7C600F0ABCC /* SceneDelegate.swift in Sources */,
+				3740D8832996ADA8001AB6A9 /* ImageMessageCell.swift in Sources */,
 				37B71E222992BFEC00F0ABCC /* APIKey.swift in Sources */,
+				3740D8812996AD9E001AB6A9 /* TextMessageCell.swift in Sources */,
 				37B71E182992B28900F0ABCC /* ImageRequestBody.swift in Sources */,
 				37B71E142992B20D00F0ABCC /* PicViewModel.swift in Sources */,
-				37B71E102992B19700F0ABCC /* PicViewController.swift in Sources */,
-				37B71E122992B1DC00F0ABCC /* PictureView.swift in Sources */,
+				37B71E102992B19700F0ABCC /* ChatRoomViewController.swift in Sources */,
+				37B71E122992B1DC00F0ABCC /* ChatRoomBaseView.swift in Sources */,
+				373F349A2999E39900695CC9 /* KeyBoardHandling.swift in Sources */,
+				37B71E242995FF6B00F0ABCC /* UITextView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
